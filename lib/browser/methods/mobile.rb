@@ -1,7 +1,17 @@
 class Browser
   module Mobile
-    # Detect if browser is mobile.
+    # Detect if it's a native app
+    def native?
+      !!(ua =~ /Tiempo/)
+    end
+
+  # Detect if browser is on a phone.
     def mobile?
+      detect_mobile? || ios?  || android? || tablet?
+    end
+    
+    # Detect if browser is on a phone.
+    def phone?
       detect_mobile? && !tablet?
     end
 

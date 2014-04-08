@@ -6,9 +6,9 @@ Gem::Specification.new do |s|
   s.name        = "browser"
   s.version     = Browser::Version::STRING
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["Nando Vieira"]
-  s.email       = ["fnando.vieira@gmail.com"]
-  s.homepage    = "http://github.com/fnando/browser"
+  s.authors     = ["Nando Vieira", "Peter Terrill"]
+  s.email       = ["fnando.vieira@gmail.com", "dev@tiempolabs.com"]
+  s.homepage    = "http://github.com/SempervirensSoftware/browser"
   s.summary     = "Do some browser detection with Ruby."
   s.description = s.summary
 
