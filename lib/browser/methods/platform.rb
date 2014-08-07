@@ -2,7 +2,7 @@ class Browser
   module Platform
     # Detect if browser is Android.
     def android?
-      !!(ua =~ /Android/ && !opera?)
+      !!(ua =~ /Android/ && !opera?) || !!(ua =~ /android/ && !opera?)
     end
 
     # Detect if browser is ios?.
